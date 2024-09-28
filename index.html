@@ -1,152 +1,261 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
-			<img src="https://github.com/RHONN3927/rhonn3927.github.io/blob/main/rhonn3927logo.png?raw=true" alt="RHONN_Logo" width="300">
-		</div>
-		<title>RHONN3927 - Empowering Charity & Technology</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+    <!-- Font and Meta -->
+    <title>RHONN3927 - Empowering Charity & Technology</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        
+        a {
+            color: #007bff;
+        }
+        
+        /* Logo and Header */
+        #header {
+            background-color: #222;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        #header .logo {
+            color: #fff;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        #header .logo .symbol img {
+            max-width: 50px;
+        }
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/rhonnlogo.png" alt="" /></span><span class="title">RHONN3927</span>
-								</a>
+        /* Main Banner Logo */
+        .banner-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            background-color: #f8f9fa;
+        }
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+        /* Typography */
+        h1, h2 {
+            font-weight: 700;
+        }
 
-						</div>
-					</header>
+        p {
+            font-weight: 400;
+            line-height: 1.6;
+        }
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About RHONN3927</a></li>
-							<li><a href="projects.html">Charity Projects</a></li>
-							<li><a href="tokenomics.html">Tokenomics</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
-						</ul>
-					</nav>
+        /* Button Styling */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>Welcome to RHONN3927 Token<br />
-								Empowering Charity and Technology through Decentralized Solutions</h1>
-								<p>RHONN3927 is a token built under the Egonchain network, designed to foster charity projects and technology development. Our mission is to leverage the power of blockchain to create sustainable impact and innovation.</p>
-							</header>
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/charity.jpg" alt="Charity" />
-									</span>
-									<a href="projects.html">
-										<h2>Charity Initiatives</h2>
-										<div class="content">
-											<p>Supporting global charity projects and partnerships for sustainable change.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/tokenomics.jpg" alt="Tokenomics" />
-									</span>
-									<a href="tokenomics.html">
-										<h2>Tokenomics</h2>
-										<div class="content">
-											<p>Learn more about the RHONN3927 token distribution, liquidity, and utility.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/technology.jpg" alt="Technology" />
-									</span>
-									<a href="technology.html">
-										<h2>Technology</h2>
-										<div class="content">
-											<p>Driving technological innovation through blockchain and decentralized applications.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/community.jpg" alt="Community" />
-									</span>
-									<a href="community.html">
-										<h2>Community Engagement</h2>
-										<div class="content">
-											<p>Join our community and be part of our mission to create meaningful impact.</p>
-										</div>
-									</a>
-								</article>
-							</section>
-						</div>
-					</div>
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="https://twitter.com/rhonn3927" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://facebook.com/rhonn3927" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="https://github.com/rhonn3927" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; RHONN3927. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+        /* Layout */
+        .inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-			</div>
+        .tiles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        .tiles article {
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            text-align: center;
+        }
 
-	</body>
+        /* Footer Styling */
+        #footer {
+            background-color: #222;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        #footer h2 {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Banner with Logo -->
+    <div class="banner-logo">
+        <img src="https://github.com/RHONN3927/rhonn3927.github.io/blob/main/rhonn3927logo.png?raw=true" alt="RHONN_Logo" width="300">
+    </div>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/rhonnlogo.png" alt="" /></span>
+                    <span class="title">RHONN3927</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About RHONN3927</a></li>
+                <li><a href="projects.html">Charity Projects</a></li>
+                <li><a href="tokenomics.html">Tokenomics</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <header>
+                    <h1>Welcome to RHONN3927 Token<br />
+                    Empowering Charity and Technology through Decentralized Solutions</h1>
+                    <p>RHONN3927 is a token built under the Egonchain network, designed to foster charity projects and technology development. Our mission is to leverage the power of blockchain to create sustainable impact and innovation.</p>
+                </header>
+
+                <!-- Section Tiles -->
+                <section class="tiles">
+                    <article class="style1">
+                        <span class="image">
+                            <img src="images/charity.jpg" alt="Charity" />
+                        </span>
+                        <a href="projects.html">
+                            <h2>Charity Initiatives</h2>
+                            <div class="content">
+                                <p>Supporting global charity projects and partnerships for sustainable change.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="style2">
+                        <span class="image">
+                            <img src="images/tokenomics.jpg" alt="Tokenomics" />
+                        </span>
+                        <a href="tokenomics.html">
+                            <h2>Tokenomics</h2>
+                            <div class="content">
+                                <p>Learn more about the RHONN3927 token distribution, liquidity, and utility.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="style3">
+                        <span class="image">
+                            <img src="images/technology.jpg" alt="Technology" />
+                        </span>
+                        <a href="technology.html">
+                            <h2>Technology</h2>
+                            <div class="content">
+                                <p>Driving technological innovation through blockchain and decentralized applications.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="style4">
+                        <span class="image">
+                            <img src="images/community.jpg" alt="Community" />
+                        </span>
+                        <a href="community.html">
+                            <h2>Community Engagement</h2>
+                            <div class="content">
+                                <p>Join our community and be part of our mission to create meaningful impact.</p>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2>Get in touch</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                
+                <section>
+                    <h2>Follow</h2>
+                    <ul class="icons">
+                        <li><a href="https://twitter.com/rhonn3927" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="https://facebook.com/rhonn3927" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://github.com/rhonn3927" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                        <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                    </ul>
+                </section>
+                
+                <ul class="copyright">
+                    <li>&copy; RHONN3927. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
