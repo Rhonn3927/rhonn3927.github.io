@@ -1,12 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <!-- Font and Meta -->
-    <title>RHONN3927 - Empowering Charity & Technology</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>RHONN3927 - Empowering Charity & Technology</title>
 
-    <!-- Google Fonts for a more modern feel -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
     <!-- Main CSS -->
@@ -21,23 +20,24 @@
             color: #333;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
         
         a {
-            color: #ff6f61;
+            color: #e6f702;
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         a:hover {
-            color: #ff3d2e;
+            color: #c504f5;
         }
 
         /* Header Styling */
         #header {
-            background-color: #222;
+            background-color: #04dffc;
             padding: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.664);
         }
         
         #header .logo {
@@ -53,7 +53,7 @@
             margin-right: 10px;
         }
 
-        /* Main Banner Logo */
+        /* Main Banner */
         .banner-logo {
             display: flex;
             justify-content: center;
@@ -75,14 +75,19 @@
         }
 
         /* Typography */
-        h1, h2 {
+        h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+
+        h2 {
             font-weight: 600;
-            font-family: 'Poppins', sans-serif;
+            margin-bottom: 10px;
         }
 
         p {
             font-weight: 400;
-            line-height: 1.8;
+            margin-bottom: 20px;
             font-family: 'Roboto', sans-serif;
         }
 
@@ -96,6 +101,7 @@
             font-size: 1rem;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            font-weight: 600;
         }
 
         input[type="submit"]:hover {
@@ -125,6 +131,7 @@
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
         }
 
         .tiles article:hover {
@@ -138,7 +145,6 @@
             color: white;
             padding: 30px 0;
             text-align: center;
-            font-family: 'Roboto', sans-serif;
         }
 
         #footer h2 {
@@ -161,7 +167,7 @@
 <body class="is-preload">
     <!-- Banner with Logo -->
     <div class="banner-logo">
-        <img src="https://github.com/RHONN3927/rhonn3927.github.io/blob/main/rhonn3927logo.png?raw=true" alt="RHONN_Logo" width="300">
+        <img src="https://github.com/RHONN3927/rhonn3927.github.io/blob/main/rhonn3927logo.png?raw=true" alt="RHONN Logo" width="300">
     </div>
 
     <!-- Wrapper -->
@@ -174,8 +180,6 @@
                     <span class="symbol"><img src="images/rhonnlogo.png" alt="" /></span>
                     <span class="title">RHONN3927</span>
                 </a>
-
-                <!-- Nav -->
                 <nav>
                     <ul>
                         <li><a href="#menu">Menu</a></li>
@@ -202,7 +206,7 @@
                 <header>
                     <h1>Welcome to RHONN3927 Token<br />
                     Empowering Charity and Technology through Decentralized Solutions</h1>
-                    <p>RHONN3927 is a token built under the Egonchain network, designed to foster charity projects and technology development. Our mission is to leverage the power of blockchain to create sustainable impact and innovation.</p>
+                    <p>RHONN3927 is a token built on the Egonchain network, designed to foster charity projects and technology development. Our mission is to leverage blockchain technology to create sustainable impact and innovation.</p>
                 </header>
 
                 <!-- Section Tiles -->
@@ -226,7 +230,7 @@
                         <a href="tokenomics.html">
                             <h2>Tokenomics</h2>
                             <div class="content">
-                                <p>Learn more about the RHONN3927 token distribution, liquidity, and utility.</p>
+                                <p>Discover the RHONN3927 token distribution, liquidity, and utility.</p>
                             </div>
                         </a>
                     </article>
@@ -266,13 +270,13 @@
                     <form method="post" action="#">
                         <div class="fields">
                             <div class="field half">
-                                <input type="text" name="name" id="name" placeholder="Name" />
+                                <input type="text" name="name" id="name" placeholder="Name" required />
                             </div>
                             <div class="field half">
-                                <input type="email" name="email" id="email" placeholder="Email" />
+                                <input type="email" name="email" id="email" placeholder="Email" required />
                             </div>
                             <div class="field">
-                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                                <textarea name="message" id="message" placeholder="Message" required></textarea>
                             </div>
                         </div>
                         <ul class="actions">
@@ -281,16 +285,19 @@
                     </form>
                 </section>
 
-                <section>
+                <div class="icons">
                     <h2>Follow Us</h2>
                     <ul class="icons">
-                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://twitter.com/RHONN3927" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="https://facebook.com/RHONN3927" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://telegram.me/RHONN3927" target="_blank" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
                     </ul>
-                </section>
+                </div>
             </div>
         </footer>
     </div>
+    
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
