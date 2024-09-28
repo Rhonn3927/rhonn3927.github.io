@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -16,39 +17,39 @@
         /* General Styling */
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
+            background-color: #f0f4f8; /* Light background for a fresh look */
             color: #333;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
-        
+
         a {
-            color: #02f737;
+            color: #333; /* Darker link color for contrast */
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         a:hover {
-            color: #c504f5;
+            color: #d906f585; /* Hover effect to match logo */
         }
 
         /* Header Styling */
-        #header {
-            background-color: #04dffc;
+        header {
+            background-color: rgba(4, 252, 240, 0.034); /* Slightly transparent */
             padding: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.151);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.103);
         }
-        
-        #header .logo {
-            color: #fff;
+
+        .logo {
+            color: #e406f8bb;
             font-size: 1.8rem;
             display: flex;
             align-items: center;
             letter-spacing: 1px;
         }
-        
-        #header .logo .symbol img {
+
+        .logo .symbol img {
             max-width: 50px;
             margin-right: 10px;
         }
@@ -59,8 +60,9 @@
             justify-content: center;
             align-items: center;
             height: 50vh;
-            background-color: #e809f0;
+            background-color: #f708f796; /* Vibrant background */
             animation: slideIn 1.5s ease-out;
+            padding: 20px; /* Add padding for aesthetics */
         }
 
         @keyframes slideIn {
@@ -77,12 +79,15 @@
         /* Typography */
         h1 {
             font-weight: 700;
-            font-size: 2.5rem;
+            font-size: 2.8rem; /* Larger font for prominence */
+            color: #222; /* Darker color for visibility */
+            text-align: center; /* Center align for better presentation */
         }
 
         h2 {
             font-weight: 600;
             margin-bottom: 10px;
+            color: #d906f5; /* Heading color to match the logo */
         }
 
         p {
@@ -140,19 +145,19 @@
         }
 
         /* Footer Styling */
-        #footer {
-            background-color: #222;
-            color: white;
+        footer {
+            background-color: #defffc;
+            color: rgb(57, 6, 245);
             padding: 30px 0;
             text-align: center;
         }
 
-        #footer h2 {
-            color: #ff6f61;
+        footer h2 {
+            color: #0d0e0dd7;
         }
 
         .icons li a {
-            background-color: #ff6f61;
+            background-color: #09f5a6d7;
             color: white;
             padding: 10px;
             border-radius: 50%;
@@ -160,10 +165,11 @@
         }
 
         .icons li a:hover {
-            background-color: #ff3d2e;
+            background-color: #086ef3;
         }
     </style>
 </head>
+
 <body class="is-preload">
     <!-- Banner with Logo -->
     <div class="banner-logo">
@@ -174,10 +180,10 @@
     <div id="wrapper">
 
         <!-- Header -->
-        <header id="header">
+        <header>
             <div class="inner">
                 <a href="index.html" class="logo">
-                    <span class="symbol"><img src="images/rhonnlogo.png" alt="" /></span>
+                    <span class="symbol"><img src="https://github.com/RHONN3927/rhonn3927.github.io/blob/main/rhonn3927logo.png?raw=true" alt="RHONN Logo" /></span>
                     <span class="title">RHONN3927</span>
                 </a>
                 <nav>
@@ -194,18 +200,21 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About RHONN3927</a></li>
-                <li><a href="projects.html">Charity Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="tokenomics.html">Tokenomics</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
-        <!-- Main -->
-        <div id="main">
+        <!-- Main Content -->
+        <main id="main">
             <div class="inner">
                 <header>
                     <h1>Welcome to RHONN3927 Token<br />
-                    Empowering Charity and Technology through Decentralized Solutions</h1>
+                        Empowering Charity and Technology through Decentralized Solutions</h1>
                     <p>RHONN3927 is a token built on the Egonchain network, designed to foster charity projects and technology development. Our mission is to leverage blockchain technology to create sustainable impact and innovation.</p>
                 </header>
 
@@ -260,46 +269,29 @@
                     </article>
                 </section>
             </div>
-        </div>
+        </main>
 
         <!-- Footer -->
-        <footer id="footer">
+        <footer>
             <div class="inner">
-                <section>
-                    <h2>Get in touch</h2>
-                    <form method="post" action="#">
-                        <div class="fields">
-                            <div class="field half">
-                                <input type="text" name="name" id="name" placeholder="Name" required />
-                            </div>
-                            <div class="field half">
-                                <input type="email" name="email" id="email" placeholder="Email" required />
-                            </div>
-                            <div class="field">
-                                <textarea name="message" id="message" placeholder="Message" required></textarea>
-                            </div>
-                        </div>
-                        <ul class="actions">
-                            <li><input type="submit" value="Send" class="primary" /></li>
-                        </ul>
-                    </form>
-                </section>
-
-                <div class="icons">
-                    <h2>Follow Us</h2>
-                    <ul class="icons">
-                        <li><a href="https://twitter.com/RHONN3927" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                       
-                        <li><a href="https://facebook.com/RHONN3927" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                       
-                        <li><a href="https://telegram.me/RHONN3927" target="_blank" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
-                    </ul>
-                </div>
+                <h2>Stay Connected</h2>
+                <p>Follow us on our social media channels:</p>
+                <ul class="icons">
+                    <li><a href="https://twitter.com/RHONN3927" class="icon brands fa-twitter" target="_blank">Twitter</a></li>
+                    <li><a href="https://facebook.com/RHONN3927" class="icon brands fa-facebook" target="_blank">Facebook</a></li>
+                    <li><a href="https://telegram.me/RHONN3927" class="icon brands fa-telegram" target="_blank">Telegram</a></li>
+                </ul>
+                <p>&copy; 2024 RHONN3927. All rights reserved.</p>
             </div>
         </footer>
     </div>
-    
+
     <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
