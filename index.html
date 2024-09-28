@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <!-- Font and Meta -->
     <title>RHONN3927 - Empowering Charity & Technology</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
+
+    <!-- Google Fonts for a more modern feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -16,31 +16,41 @@
     <style>
         /* General Styling */
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f0f2f5;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
             color: #333;
+            margin: 0;
+            padding: 0;
         }
         
         a {
-            color: #007bff;
+            color: #ff6f61;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
-        
-        /* Logo and Header */
+
+        a:hover {
+            color: #ff3d2e;
+        }
+
+        /* Header Styling */
         #header {
             background-color: #222;
             padding: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         }
         
         #header .logo {
             color: #fff;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             display: flex;
             align-items: center;
+            letter-spacing: 1px;
         }
         
         #header .logo .symbol img {
             max-width: 50px;
+            margin-right: 10px;
         }
 
         /* Main Banner Logo */
@@ -49,32 +59,47 @@
             justify-content: center;
             align-items: center;
             height: 50vh;
-            background-color: #f8f9fa;
+            background-color: #ff6f61;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Typography */
         h1, h2 {
-            font-weight: 700;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
         }
 
         p {
             font-weight: 400;
-            line-height: 1.6;
+            line-height: 1.8;
+            font-family: 'Roboto', sans-serif;
         }
 
         /* Button Styling */
         input[type="submit"] {
-            background-color: #007bff;
+            background-color: #ff6f61;
             color: white;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 10px 25px;
+            border-radius: 50px;
             font-size: 1rem;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
         input[type="submit"]:hover {
-            background-color: #0056b3;
+            background-color: #ff3d2e;
         }
 
         /* Layout */
@@ -96,6 +121,15 @@
             min-width: 250px;
             max-width: 350px;
             text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tiles article:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         /* Footer Styling */
@@ -104,10 +138,23 @@
             color: white;
             padding: 30px 0;
             text-align: center;
+            font-family: 'Roboto', sans-serif;
         }
 
         #footer h2 {
-            color: #007bff;
+            color: #ff6f61;
+        }
+
+        .icons li a {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .icons li a:hover {
+            background-color: #ff3d2e;
         }
     </style>
 </head>
@@ -233,29 +280,17 @@
                         </ul>
                     </form>
                 </section>
-                
+
                 <section>
-                    <h2>Follow</h2>
+                    <h2>Follow Us</h2>
                     <ul class="icons">
-                        <li><a href="https://twitter.com/rhonn3927" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-                        <li><a href="https://facebook.com/rhonn3927" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-                        <li><a href="https://github.com/rhonn3927" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-                        <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
                     </ul>
                 </section>
-                
-                <ul class="copyright">
-                    <li>&copy; RHONN3927. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
             </div>
         </footer>
     </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
